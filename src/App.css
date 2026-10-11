@@ -1,0 +1,157 @@
+
+.mood-machine {
+  width: 100%;
+  overflow: clip;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 48px 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+/* SECTION 1 — INTRO */
+
+.intro {
+  background: #171a3b;
+  color: #f8f5ef;
+  gap: 28px;
+}
+
+.intro h1,
+.finale h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.075em;
+}
+
+.intro h1 span {
+  color: #a9b5f5;
+}
+
+.intro-copy,
+.finale-copy {
+  max-width: 360px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.scroll-note,
+.end-note {
+  margin-top: 36px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* SECTION 2 — MOOD MACHINE */
+
+.machine {
+  background: #a9b5f5;
+  color: #171a3b;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.machine h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.06em;
+}
+
+.sun-stage {
+  width: min(70vw, 420px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.sun {
+  width: 75%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #ffe69a;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  box-shadow: 18px 18px 0 #171a3b;
+}
+
+.sun-eye {
+  position: absolute;
+  top: 42%;
+  width: 12px;
+  height: 18px;
+  border-radius: 50%;
+  background: #171a3b;
+}
+
+.sun-eye-left {
+  left: 34%;
+}
+
+.sun-eye-right {
+  right: 34%;
+}
+
+.sun-smile {
+  position: absolute;
+  top: 52%;
+  width: 45px;
+  height: 22px;
+  border-bottom: 4px solid #171a3b;
+  border-radius: 0 0 50% 50%;
+}
+
+.machine-caption {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* SECTION 3 — FINALE */
+
+.finale {
+  background: #ffe69a;
+  color: #171a3b;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.finale h2 span {
+  color: #6979dc;
+}
+
+.finale .end-note {
+  margin-top: 24px;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 600px) {
+  .section {
+    padding: 36px 7vw;
+  }
+
+  .sun-stage {
+    width: min(80vw, 340px);
+  }
+
+  .sun {
+    box-shadow: 10px 10px 0 #171a3b;
+  }
+}
